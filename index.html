@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractive Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stopwatch</h1>
+        <div class="stopwatch">
+            <div class="circle">
+                <div class="time-display" id="timeDisplay">00:00:00</div>
+                <svg>
+                    <circle cx="70" cy="70" r="70" id="progressCircle"></circle>
+                </svg>
+            </div>
+            <div class="buttons">
+                <button id="startBtn">Start</button>
+                <button id="pauseBtn">Pause</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </div>
+        <div class="lap-container">
+            <h2>Lap Times</h2>
+            <ul id="laps"></ul>
+            <button id="lapBtn">Lap</button>
+        </div>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+        <button id="downloadBtn">Download Laps</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
